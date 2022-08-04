@@ -13,8 +13,8 @@ def load_data():
     Convert the data to a matrix of TF-IDF features.
     Then return the splited data and the features in the data
     """
-    real, real_y = csv_to_list("/Users/yehao/Desktop/Projects/Machine Learning Practice/Fake News Detector/clean_real.txt")
-    fake, fake_y = csv_to_list("/Users/yehao/Desktop/Projects/Machine Learning Practice/Fake News Detector/clean_fake.txt")
+    real, real_y = csv_to_list("/Fake News Detector/clean_real.txt")
+    fake, fake_y = csv_to_list("/Fake News Detector/clean_fake.txt")
     headlines = real + fake
     y = np.concatenate((np.zeros(real_y), np.ones(fake_y)))
     vec = TfidfVectorizer()
