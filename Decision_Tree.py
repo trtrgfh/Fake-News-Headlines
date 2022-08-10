@@ -26,7 +26,7 @@ def compute_entropy(y):
 
 def split_dataset(X, node_indices, feature):
     """
-    Splits the data at the given node into left and right branches    
+    Return the left_indices and right_indices after spliting the data at the given node based on the feature   
     """
     
     left_indices = []
@@ -40,19 +40,17 @@ def split_dataset(X, node_indices, feature):
         
     return left_indices, right_indices
 
-
-# 
-# Information Gain = H(p_1^\text{node})- (w^{\text{left}}H(p_1^\text{left}) + w^{\text{right}}H(p_1^\text{right}))$$
-# 
+ 
+# Information Gain = H(p_node)- (w_left * H(p_left) + w_right * H(p_right) 
 # where 
-# - $H(p_1^\text{node})$ is entropy at the node 
-# - $H(p_1^\text{left})$ and $H(p_1^\text{right})$ are the entropies at the left and the right branches resulting from the split
-# - $w^{\text{left}}$ and $w^{\text{right}}$ are the proportion of examples at the left and right branch respectively
+# - H(p_node) is entropy at the node 
+# - H(p_left) and H(p_right) are the entropies at the left and the right branches resulting from the split
+# - w_left and w_right are the proportion of examples at the left and right branch respectively
 
 def compute_information_gain(X, y, node_indices, feature):
     
     """
-    Compute the information of splitting the node on a given feature
+    Return the information gain of splitting the node on a given feature
     """    
     
     left_indices, right_indices = split_dataset(X, node_indices, feature)
