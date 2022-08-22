@@ -10,5 +10,5 @@
 - Best Depth: 35
 - Train_acc: 0.9786, Val_acc: 0.8163, Test_acc: 0.8102
 ### Entropy Criteria  
-- Best Depth: 35
+- Best Depth: 20
 - Train_acc: 0.9392, Val_acc: 0.8041, Test_acc: 0.8143
