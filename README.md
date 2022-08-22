@@ -6,9 +6,9 @@
 - 70% training set, 15% validation set, 15% test set
 
 ## Decision Tree Classifier
-- Gini Criteria  
+### Gini Criteria  
 - Best Depth: 35
 - Train_acc: 0.9786, Val_acc: 0.8163, Test_acc: 0.8102
-- Entropy Criteria  
+### Entropy Criteria  
 - Best Depth: 35
 - Train_acc: 0.9392, Val_acc: 0.8041, Test_acc: 0.8143
