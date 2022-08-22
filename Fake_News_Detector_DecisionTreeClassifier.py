@@ -6,6 +6,7 @@ import numpy as np
 import graphviz
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score
+import random
 
 def load_data():
     """
