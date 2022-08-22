@@ -75,7 +75,7 @@ def visulization(model, feature_names, criterion):
     graph = graphviz.Source(dot_data)
     graph.render('graph_{}'.format(criterion))
 
-
+random.seed(54321)
 data, feature_names = load_data()
 depth = [1,5,10,20,35,50,75]
 model_gini, model_entropy = select_model(data, depth)
