@@ -1,7 +1,7 @@
 # Fake-News-Headlines
 
 ## Dataset
-- The dataset contains 1298 fake news headlines and 1968 real news headlines
+- 1298 fake news headlines and 1968 real news headlines
 
 ## Decision Tree Classifier
 - Best Depth: 20
