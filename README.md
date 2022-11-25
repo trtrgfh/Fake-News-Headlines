@@ -7,14 +7,14 @@ src="https://img.shields.io/badge/Jupyter-%23F37626.svg?style=for-the-badge&logo
 
 
 ## Dataset
-- 3266 examples of new headlines
+- 3266 examples of new headlines, 5799 features
 - 1298 fake news headlines and 1968 real news headlines
 - 70% training set, 15% validation set, 15% test set
 
 ## Decision Tree Classifier
 ### Gini Criteria  
-- Best Depth: 35
-- Train_acc: 0.9786, Val_acc: 0.8163, Test_acc: 0.8102
-### Entropy Criteria  
 - Best Depth: 20
-- Train_acc: 0.9392, Val_acc: 0.8041, Test_acc: 0.8143
+- Train_acc: 0.9444, Val_acc: 0.8163, Test_acc: 0.8041
+### Entropy Criteria  
+- Best Depth: 10
+- Train_acc: 0.8771, Val_acc: 0.8102, Test_acc: 0.8143
