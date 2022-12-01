@@ -12,11 +12,22 @@ This project will implements the methods needed for the decision tree algorithm 
 
 ![Gini-Entropy-Differences](https://media.geeksforgeeks.org/wp-content/uploads/20200620180439/Gini-Impurity-vs-Entropy.png)
 
+### Downside of Creating only one Decision Tree
+- Small changes in the training set could result in a completely different decision tree
+
+### Random Forest Algorithm Intuition
+- Using sampling with replacement to create a new training set of size m
+- Train a decision tree on the new dataset, and when choosing a feature to use to split, pick a random subset of k < n features for the algorithm to choose from
+- Repeat the process B times (common choice of B: 64, 128)
+
+### Boosted Trees Intuition
+- When creating a new training set, make it more likely to pick misclassified examples from previously trained trees
+  
 ## Result
-### Gini Criteria  
+### Gini Criterion  
 - Best Depth: 20
 - Train_acc: 0.9444, Val_acc: 0.8163, Test_acc: 0.8041
-### Entropy Criteria  
+### Entropy Criterion  
 - Best Depth: 10
 - Train_acc: 0.8771, Val_acc: 0.8102, Test_acc: 0.8143
 ### XGBoost
