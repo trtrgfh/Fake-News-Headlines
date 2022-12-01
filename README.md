@@ -12,13 +12,12 @@ This project will implements the methods needed for the decision tree algorithm 
 
 ![Gini-Entropy-Differences](https://media.geeksforgeeks.org/wp-content/uploads/20200620180439/Gini-Impurity-vs-Entropy.png)
 
-### Downside of Creating only one Decision Tree
-- Small changes in the training set could result in a completely different decision tree
+One downside of using only one decision tree is that small changes in the training set could result in a completely different decision tree, so creating multiple trees (tree ensembles) could make the algorithm more robust.
 
 ### Random Forest Algorithm Intuition
 - Using sampling with replacement to create a new training set of size m
 - Train a decision tree on the new dataset, and when choosing a feature to use to split, pick a random subset of k < n features for the algorithm to choose from
-- Repeat the process B times (common choice of B: 64, 128)
+- Repeat the process B times (common choice: 64, 128)
 
 ### Boosted Trees Intuition
 - When creating a new training set, make it more likely to pick misclassified examples from previously trained trees
