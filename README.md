@@ -7,7 +7,7 @@ src="https://img.shields.io/badge/Jupyter-%23F37626.svg?style=for-the-badge&logo
 
 ## Description
 As people spending more time online, misinformation has become a real issue. People that are less rational could be easily mislead by the false information and it would cause some bad consiquences sometimes. let alone the fake news headlines as a click bait publish by the mainstream medias in order to get more views. To solve this problem, people have came up with many solutions. One of which is using machine learning to identify and eliminate the fake news headlines.\
-For the purpose of this project, you will find an efficient method to solve this problem which is using the decision tree algorithm\
+For the purpose of this project, you will find an efficient method to solve this problem which is using the decision tree algorithm.\
 This project will implements the methods needed for the decision tree algorithm and try out both the gini criterion and the entropy criterion, as well as the xgboost library. 
 
 ![Gini-Entropy-Differences](https://media.geeksforgeeks.org/wp-content/uploads/20200620180439/Gini-Impurity-vs-Entropy.png)
