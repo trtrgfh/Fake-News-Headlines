@@ -31,3 +31,18 @@ One downside of using only one decision tree is that small changes in the traini
 - Train_acc: 0.8771, Val_acc: 0.8102, Test_acc: 0.8143
 ### XGBoost
 - Train_acc: 0.9641, Val_acc: 0.8449, Test_acc: 0.8429
+
+### Cost function
+
+The collaborative filtering cost function is given by
+$$J({\mathbf{x}^{(0)},...,\mathbf{x}^{(n_m-1)},\mathbf{w}^{(0)},b^{(0)},...,\mathbf{w}^{(n_u-1)},b^{(n_u-1)}})= \frac{1}{2}\sum_{(i,j):r(i,j)=1}(\mathbf{w}^{(j)} \cdot \mathbf{x}^{(i)} + b^{(j)} - y^{(i,j)})^2
++\underbrace{
+\frac{\lambda}{2}
+\sum_{j=0}^{n_u-1}\sum_{k=0}^{n-1}(\mathbf{w}^{(j)}_k)^2
++ \frac{\lambda}{2}\sum_{i=0}^{n_m-1}\sum_{k=0}^{n-1}(\mathbf{x}_k^{(i)})^2
+}_{regularization}$$
+equiv to
+$$
+= \frac{1}{2}\sum_{j=0}^{n_u-1} \sum_{i=0}^{n_m-1}r(i,j)*(\mathbf{w}^{(j)} \cdot \mathbf{x}^{(i)} + b^{(j)} - y^{(i,j)})^2
++\text{regularization}
+$$
