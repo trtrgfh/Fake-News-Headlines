@@ -1,4 +1,4 @@
-<img src="https://github.com/trtrgfh/Fake-News-Headlines/assets/73056232/c7a75b84-98d2-4996-badc-cfd7765cfefd" width="450"/>
+<img src="https://github.com/trtrgfh/Fake-News-Headlines/assets/73056232/1debb1d9-acff-4a78-b57e-d6151b92ad58" width="600"/>
 
 # Fake News Detection
 
@@ -17,7 +17,7 @@ clean_fake.txt and clean_real.txt are used where clean_real.txt contains real ne
 # Results and evaluation
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200620180439/Gini-Impurity-vs-Entropy.png" width="450"/>
 
-One downside of using only one decision tree is that small changes in the training set could result in a completely different decision tree, so creating multiple trees (tree ensembles) could make the algorithm more robust.
+One downside of using only one decision tree is that small changes in the training set could result in a completely different decision tree. This could lead to a very unstable and unreliable model, and one way to address this issue is by creating multiple trees (tree ensembles) to make the algorithm more robust.
 
 ### Random Forest Algorithm Intuition
 - Using sampling with replacement to create a new training set of size m
@@ -25,7 +25,7 @@ One downside of using only one decision tree is that small changes in the traini
 - Repeat the process B times (common choice: 64, 128)
 
 ### Boosted Trees Intuition
-- When creating a new training set, make it more likely to pick misclassified examples from previously trained trees
+- When creating a new training set, make it more likely to pick the misclassified examples from previously trained trees
   
 ## Result
 ### Gini Criterion  
